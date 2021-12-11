@@ -2,10 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
 import styles from "./App.module.css";
+import App2 from "./App2"
+import App3 from "./App3"
+
 
 
 
 class App extends React.Component{
+
+  
 
   state = {
 
@@ -24,6 +29,8 @@ class App extends React.Component{
     return (
 
       <div>
+        <App3 />
+        <App2 />
         <h1 className={styles.title}>hello world</h1>
         <Button text="Continue" />
       <h1>the number :  {this.state.count}</h1>
