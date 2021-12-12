@@ -1,9 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
-import Button from "./Button";
-import styles from "./App.module.css";
-import App2 from "./App2"
-import App3 from "./App3"
+
+
+//import styles from "./App.module.css";
+
+import Movie from "./Movie"
 
 
 
@@ -29,13 +29,8 @@ class App extends React.Component{
     return (
 
       <div>
-        <App3 />
-        <App2 />
-        <h1 className={styles.title}>hello world</h1>
-        <Button text="Continue" />
-      <h1>the number :  {this.state.count}</h1>
-      <button onClick={this.add()}>Add</button>
-      <button onClick={this.minus()}>Minus</button>
+        <Movie />
+
       </div>
     )
   }
