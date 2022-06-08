@@ -1,5 +1,6 @@
 
 import React from "react";
+import styles from "./Movie.module.css";
 import { useState, useEffect } from "react";
 
 
@@ -28,15 +29,15 @@ function Movie() {
         <div>
            {loading ? (<h1>Loading....</h1>) : 
            (
-           <div>
+           <div className={styles.m_wrap}>
                {movies.map(movie => (
-                <div key={movie.id}> 
-                <img src={movie.medium_cover_image} />
-                <h2>{movie.title}</h2>
-                <p>{movie.summary}</p>
-                <ul>
+                <div className={styles.m_wrap_in} key={movie.id}> 
+                <img className={styles.m_img} src={movie.medium_cover_image} />
+                <h2 className={styles.m_title}>{movie.title}</h2>
+                <p className={styles.m_summary}>{movie.summary}</p>
+                <ul className={styles.m_ul}>
                     {movie.genres.map((g) => (
-                    <li key={g}>{g}</li>
+                    <li className={styles.m_li} key={g}>{g}</li>
                     ))}
 
                 </ul>
