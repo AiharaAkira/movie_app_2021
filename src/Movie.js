@@ -34,13 +34,13 @@ function Movie() {
                 <div className={styles.m_wrap_in} key={movie.id}> 
                 <img className={styles.m_img} src={movie.medium_cover_image} />
                 <h2 className={styles.m_title}>{movie.title}</h2>
-                <p className={styles.m_summary}>{movie.summary}</p>
                 <ul className={styles.m_ul}>
                     {movie.genres.map((g) => (
-                    <li className={styles.m_li} key={g}>{g}</li>
-                    ))}
+                        <li className={styles.m_li} key={g}>{g}</li>
+                        ))}
 
                 </ul>
+                        <p className={styles.m_summary}>{movie.summary}</p>
                 </div>
                ))}
                </div>

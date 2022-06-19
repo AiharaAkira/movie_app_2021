@@ -35,18 +35,21 @@ body {
 
 .m_summary {
 
-
+    margin-bottom: 40px;
 
 }
 
 .m_ul {
 
     list-style: none;
+    padding-left: 0;
+    
+
 
 }
 
 .m_li {
-   
+  
 
 
 
