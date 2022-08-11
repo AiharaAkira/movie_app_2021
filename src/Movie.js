@@ -38,7 +38,6 @@ function Movie() {
                     {movie.genres.map((g) => (
                         <li className={styles.m_li} key={g}>{g}</li>
                         ))}
-
                 </ul>
                         <p className={styles.m_summary}>{movie.summary}</p>
                 </div>
